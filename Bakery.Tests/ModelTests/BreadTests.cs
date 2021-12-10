@@ -21,21 +21,47 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(expectedResult, actualResult);
     }
-    // [TestMethod]
+    [TestMethod]
+    public void BreadCost_CalculateOneLoaf_Int()
+    {
+      //Arrange
+      Bread testBread = new Bread();
+      int breadInput = 1;
+      int expectedResult = 5;
+      //Act
+      int actualResult = testBread.BreadCost(breadInput);
+      //Assert
+      Assert.AreEqual(expectedResult, actualResult);
+    }
 
-    // public void BreadCost_CalculateTotalBreadCost_Int()
-    // {
-    //   //Arrange
-    //   Bread newBread = new Bread();
-    //   int userBreadNumber = 0;
-    //   int expectedCost = 0;
-    //   //Act
-    //   // int actualCost = userBreadNumber.BreadCost();
-    //   //Assert
-    //   Assert.AreEqual(expectedCost, actualCost);
-    // }
+
   }
 }
+/*
+Example input: BreadCost(0)
+Example output: 0
+
+Example input: BreadCost(1)
+Example output: 5
+
+Example input: BreadCost(2)
+Example output: 10
+
+Example input: BreadCost(3)
+Example output: 10, Deal! - add "Deal!" only for mults of 3
+
+Example input: BreadCost(4)
+Example output: 15,
+
+Example input: BreadCost(6)
+Example output: 20
+
+Example input: BreadCost(20)
+Example output: 70
+
+Example input: BreadCost(36)
+Example output: 120
+*/
 
 /*
 
