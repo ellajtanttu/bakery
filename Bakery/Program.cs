@@ -28,7 +28,7 @@ class Program//class
       int orderTotal = breadTotal + pastryTotal;
       Console.WriteLine($"Bread Total: ${breadTotal}.00");
       Console.WriteLine($"Pastry Total: ${pastryTotal}.00");
-      Console.WriteLine($"TOTAL: ${orderTotal}.00");
+      Console.WriteLine($"ORDER TOTAL: ${orderTotal}.00");
       Console.WriteLine("---------------------------");
       Console.WriteLine("Would you like to place another order? ['Y' for yes, 'Enter' for no]");
       string newOrderAnswer = Console.ReadLine();
