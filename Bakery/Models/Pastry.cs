@@ -5,5 +5,9 @@ namespace Bakery.Models
 {
   public class Pastry//class
   {
+    public int PastryCost(int userPastry)
+    {
+      return 0;
+    }
   }
 }
