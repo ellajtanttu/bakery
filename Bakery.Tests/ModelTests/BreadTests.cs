@@ -74,6 +74,19 @@ namespace Bakery.Tests
       Assert.AreEqual(expectedResult, actualResult);
     }
 
+    [TestMethod]
+    public void BreadCost_Calculate6Loaves_Int()
+    {
+      //Arrange
+      Bread testBread = new Bread();
+      int breadInput = 36;
+      int expectedResult = 120;
+      //Act
+      int actualResult = testBread.BreadCost(breadInput);
+      //Assert
+      Assert.AreEqual(expectedResult, actualResult);
+    }
+
 
   }
 }
@@ -90,7 +103,7 @@ Example output: 10
 XExample input: BreadCost(3)
 Example output: 10, Deal! - add "Deal!" only for mults of 3
 
-5
+X5
 Example input: BreadCost(4)
 Example output: 15,
 
