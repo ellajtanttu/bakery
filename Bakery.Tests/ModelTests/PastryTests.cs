@@ -21,6 +21,7 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(expectedResult, actualResult);
     }
+
     [TestMethod]
     public void PastryCost_Calculate1Pastry_Int()
     {
@@ -33,18 +34,31 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(expectedResult, actualResult);
     }
+
+    [TestMethod]
+    public void PastryCost_Calculate2Pastry_Int()
+    {
+      //Arrange
+      Pastry testPastry = new Pastry();
+      int pastryInput = 3;
+      int expectedResult = 5;
+      //Act
+      int actualResult = testPastry.PastryCost(pastryInput);
+      //Assert
+      Assert.AreEqual(expectedResult, actualResult);
+    }
   }
 }
 
 /*
 Pastry:
-Example input: PastryCost(1)
+X Example input: PastryCost(1)
 Example output: 2
 
-Example input: PastryCost(2)
+X Example input: PastryCost(2)
 Example output: 4
 
-Example input: PastryCost(3)
+X Example input: PastryCost(3)
 Example output: 5
 
 Example input: PastryCost(4)
