@@ -21,6 +21,18 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(expectedResult, actualResult);
     }
+    [TestMethod]
+    public void PastryCost_Calculate1Pastry_Int()
+    {
+      //Arrange
+      Pastry testPastry = new Pastry();
+      int pastryInput = 1;
+      int expectedResult = 2;
+      //Act
+      int actualResult = testPastry.PastryCost(pastryInput);
+      //Assert
+      Assert.AreEqual(expectedResult, actualResult);
+    }
   }
 }
 
