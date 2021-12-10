@@ -40,7 +40,7 @@ namespace Bakery.Tests
     {
       //Arrange
       Bread testBread = new Bread();
-      int breadInput = 2;
+      int breadInput = 3;
       int expectedResult = 10;
       //Act
       int actualResult = testBread.BreadCost(breadInput);
@@ -58,7 +58,7 @@ Example output: 0
 X Example input: BreadCost(1)
 Example output: 5
 
-Example input: BreadCost(2)
+X Example input: BreadCost(2)
 Example output: 10
 
 Example input: BreadCost(3)
