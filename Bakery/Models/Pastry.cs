@@ -5,13 +5,12 @@ namespace Bakery.Models
 {
   public class Pastry//class
   {
-    public int PastryCost(int userPastry) // 12
+    public int PastryCost(int userPastry) // 8
     {
-      int remAfterThrees = userPastry % 3; // 0
-      int numberOfThrees = (userPastry - remAfterThrees) / 3; // 4
-      int discountTotal = (userPastry * 2) - numberOfThrees; // 20
-      int nonDiscountTotal = remAfterThrees * 2; // 0
-      return discountTotal + nonDiscountTotal; // 20
+      int remAfterThrees = userPastry % 3; // 2
+      int numberOfThrees = (userPastry - remAfterThrees) / 3; // 2
+      int costTotal = (userPastry * 2) - numberOfThrees; // 14
+      return costTotal; // 14
 
 
     }

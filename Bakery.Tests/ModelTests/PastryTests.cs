@@ -40,8 +40,8 @@ namespace Bakery.Tests
     {
       //Arrange
       Pastry testPastry = new Pastry();
-      int pastryInput = 3;
-      int expectedResult = 5;
+      int pastryInput = 2;
+      int expectedResult = 4;
       //Act
       int actualResult = testPastry.PastryCost(pastryInput);
       //Assert
