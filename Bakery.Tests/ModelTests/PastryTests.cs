@@ -12,74 +12,57 @@ namespace Bakery.Tests
     [TestMethod]
     public void PastryCost_CalculateTotalPastryCost_Int()
     {
-      //Arrange
       Pastry testPastry = new Pastry();
       int pastryInput = 0;
       int expectedResult = 0;
-      //Act
       int actualResult = testPastry.PastryCost(pastryInput);
-      //Assert
       Assert.AreEqual(expectedResult, actualResult);
     }
 
     [TestMethod]
     public void PastryCost_Calculate1Pastry_Int()
     {
-      //Arrange
       Pastry testPastry = new Pastry();
       int pastryInput = 1;
       int expectedResult = 2;
-      //Act
       int actualResult = testPastry.PastryCost(pastryInput);
-      //Assert
       Assert.AreEqual(expectedResult, actualResult);
     }
 
     [TestMethod]
     public void PastryCost_Calculate2Pastry_Int()
     {
-      //Arrange
       Pastry testPastry = new Pastry();
       int pastryInput = 2;
       int expectedResult = 4;
-      //Act
       int actualResult = testPastry.PastryCost(pastryInput);
-      //Assert
       Assert.AreEqual(expectedResult, actualResult);
     }
 
     [TestMethod]
     public void PastryCost_Calculate3Pastry_Int()
     {
-      //Arrange
       Pastry testPastry = new Pastry();
       int pastryInput = 3;
       int expectedResult = 5;
-      //Act
       int actualResult = testPastry.PastryCost(pastryInput);
-      //Assert
       Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    [TestMethod]
+    public void PastryConstructor_CreatesInstanceOfPastry_Item()
+    {
+      Pastry testPastry = new Pastry();
+      Assert.AreEqual(typeof(Pastry), testPastry.GetType());
     }
   }
 }
 
 /*
-Pastry:
-X Example input: PastryCost(1)
-Example output: 2
-
-X Example input: PastryCost(2)
-Example output: 4
-
-X Example input: PastryCost(3)
-Example output: 5
-
-Example input: PastryCost(4)
-Example output: 7
-
-Example input: PastryCost(5)
-Example output: 9
-
-Example input: PastryCost(6)
-Example output: 10
+    [TestMethod]
+    public void ItemConstructor_CreatesInstanceOfItem_Item()
+    {
+      Item newItem = new Item();
+      Assert.AreEqual(typeof(Item), newItem.GetType());
+    }
 */

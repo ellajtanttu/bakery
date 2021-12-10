@@ -1,9 +1,8 @@
-using System; // directive - tells it what code it needs in order to function.
+using System;
 using Bakery.Models;
 
-class Program//class
+class Program
 {
-
   static void Main()
   {
     Bread userBread = new Bread();
@@ -46,34 +45,5 @@ class Program//class
       Console.WriteLine("Please enter a whole number only.");
       Main();
     }
-
   }
 }
-
-// try
-// {
-//   Console.WriteLine($"Your word is worth {newWord.GetScore()} points");
-//   Console.WriteLine("Current list of entered words with values");
-//   foreach (ScrabbleLetter currentWord in resultList)
-//   {
-//     Console.WriteLine($"{currentWord.Word} - {newWord.GetScore()}");
-//   }
-//   Console.WriteLine($"Total Score is: {ScrabbleLetter.GetTotalScore()}");
-// }
-// catch (Exception)
-// {
-//   Console.WriteLine("Word must only be letters");
-// }
-
-
-
-// string addItemAnswer = Console.ReadLine();
-//     if (addItemAnswer == "Y" || addItemAnswer == "y" )
-//     {
-//       Console.WriteLine("Add something to your to do list:");
-//       string userDescription = Console.ReadLine();
-//       new Item(userDescription);
-//       Main();
-//     }
-//     else
-//     {

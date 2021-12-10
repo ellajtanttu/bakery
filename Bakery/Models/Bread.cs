@@ -1,11 +1,10 @@
-using System; // directive - tells it what code it needs in order to function.
-using System.Collections.Generic; // if using list objects
+using System;
+// using System.Collections.Generic; // if using list objects
 
 namespace Bakery.Models
 {
-  public class Bread//class
+  public class Bread
   {
-
     public int BreadCost(int userBread)
     {
       int simplifiedOrder = userBread / 3;
@@ -22,7 +21,5 @@ namespace Bakery.Models
         return discLoafPrice + nonDiscount;
       }
     }
-
-
   }
 }

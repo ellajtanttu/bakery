@@ -1,22 +1,36 @@
-using System; // directive - tells it what code it needs in order to function.
+using System;
 using System.Collections.Generic; // if using list objects
 
 namespace Bakery.Models
 {
-  public class Pastry//class
+  public class Pastry
   {
-    public int PastryCost(int userPastry) // 8
+    public int ReqPastryNum { get; set; }
+
+    // public Pastry(int reqPastryNum)
+    // {
+    //   ReqPastryNum = reqPastryNum;
+    // }
+    public int PastryCost(int userPastry)
     {
-      int remAfterThrees = userPastry % 3; // 2
-      int numberOfThrees = (userPastry - remAfterThrees) / 3; // 2
-      int costTotal = (userPastry * 2) - numberOfThrees; // 14
-      return costTotal; // 14
-
-
+      int remAfterThrees = userPastry % 3;
+      int numberOfThrees = (userPastry - remAfterThrees) / 3;
+      int costTotal = (userPastry * 2) - numberOfThrees;
+      return costTotal;
     }
   }
 }
 
-/*
 
+/*
+public string MakeModel { get; set; }
+public int Price { get; set; }
+public int Miles { get; set; }
+
+public Car(string makeModel, int price, int miles)
+{
+  MakeModel = makeModel;
+  Price = price;
+  Miles = miles;
+}
 */
