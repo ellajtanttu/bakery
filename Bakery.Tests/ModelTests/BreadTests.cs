@@ -10,25 +10,19 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void BreadConstructor_CreateInstanceOfBread_Bread()
+    public void BreadCost_CalculateTotalBreadCost_Int()
     {
       //Arrange
-      Bread newBread = new Bread(0);
+      Bread testBread = new Bread();
+      int breadInput = 0;
+      int expectedResult = 0;
       //Act
+      int actualResult = testBread.BreadCost(breadInput);
       //Assert
-      Assert.AreEqual(typeof(Bread), newBread.GetType());
+      Assert.AreEqual(expectedResult, actualResult);
     }
-    [TestMethod]
-    public void GetBreadAmount_ReturnsAmountOfBread_Int()
-    {
-      //Arrange
-      int userBread = 0;
-      Bread newBread = new Bread(userBread);
-      //Act
-      int breadCount = newBread.BreadAmount;
-      //Assert
-      Assert.AreEqual(userBread, breadCount);
-    }
+    // [TestMethod]
+
     // public void BreadCost_CalculateTotalBreadCost_Int()
     // {
     //   //Arrange
@@ -44,6 +38,9 @@ namespace Bakery.Tests
 }
 
 /*
+
+
+
 NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
 
 Create a C# console application for a bakery that includes the
