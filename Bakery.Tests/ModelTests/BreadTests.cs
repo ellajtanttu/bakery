@@ -21,6 +21,7 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(expectedResult, actualResult);
     }
+
     [TestMethod]
     public void BreadCost_CalculateOneLoaf_Int()
     {
@@ -34,14 +35,27 @@ namespace Bakery.Tests
       Assert.AreEqual(expectedResult, actualResult);
     }
 
+    [TestMethod]
+    public void BreadCost_Calculate2Loaves_Int()
+    {
+      //Arrange
+      Bread testBread = new Bread();
+      int breadInput = 2;
+      int expectedResult = 10;
+      //Act
+      int actualResult = testBread.BreadCost(breadInput);
+      //Assert
+      Assert.AreEqual(expectedResult, actualResult);
+    }
+
 
   }
 }
 /*
-Example input: BreadCost(0)
+X Example input: BreadCost(0)
 Example output: 0
 
-Example input: BreadCost(1)
+X Example input: BreadCost(1)
 Example output: 5
 
 Example input: BreadCost(2)
