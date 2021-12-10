@@ -75,7 +75,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void BreadCost_Calculate6Loaves_Int()
+    public void BreadCost_Calculate36Loaves_Int()
     {
       //Arrange
       Bread testBread = new Bread();
