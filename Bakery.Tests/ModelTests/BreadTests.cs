@@ -40,8 +40,34 @@ namespace Bakery.Tests
     {
       //Arrange
       Bread testBread = new Bread();
+      int breadInput = 2;
+      int expectedResult = 10;
+      //Act
+      int actualResult = testBread.BreadCost(breadInput);
+      //Assert
+      Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    [TestMethod]
+    public void BreadCost_Calculate3Loaves_Int()
+    {
+      //Arrange
+      Bread testBread = new Bread();
       int breadInput = 3;
       int expectedResult = 10;
+      //Act
+      int actualResult = testBread.BreadCost(breadInput);
+      //Assert
+      Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    [TestMethod]
+    public void BreadCost_Calculate4Loaves_Int()
+    {
+      //Arrange
+      Bread testBread = new Bread();
+      int breadInput = 4;
+      int expectedResult = 15;
       //Act
       int actualResult = testBread.BreadCost(breadInput);
       //Assert
@@ -61,18 +87,22 @@ Example output: 5
 X Example input: BreadCost(2)
 Example output: 10
 
-Example input: BreadCost(3)
+XExample input: BreadCost(3)
 Example output: 10, Deal! - add "Deal!" only for mults of 3
 
+5
 Example input: BreadCost(4)
 Example output: 15,
 
+6
 Example input: BreadCost(6)
 Example output: 20
 
+7
 Example input: BreadCost(20)
 Example output: 70
 
+8
 Example input: BreadCost(36)
 Example output: 120
 */
