@@ -5,9 +5,47 @@ using System;
 
 namespace Bakery.Tests
 {
+  [TestClass]
+
+  public class BreadTests
+  {
+    [TestMethod]
+    public void BreadConstructor_CreateInstanceOfBread_Bread()
+    {
+      //Arrange
+      Bread newBread = new Bread(0);
+      //Act
+      //Assert
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+    [TestMethod]
+    public void GetBreadAmount_ReturnsAmountOfBread_Int()
+    {
+      //Arrange
+      int userBread = 0;
+      Bread newBread = new Bread(userBread);
+      //Act
+      int breadCount = newBread.BreadAmount;
+      //Assert
+      Assert.AreEqual(userBread, breadCount);
+    }
+    // public void BreadCost_CalculateTotalBreadCost_Int()
+    // {
+    //   //Arrange
+    //   Bread newBread = new Bread();
+    //   int userBreadNumber = 0;
+    //   int expectedCost = 0;
+    //   //Act
+    //   // int actualCost = userBreadNumber.BreadCost();
+    //   //Assert
+    //   Assert.AreEqual(expectedCost, actualCost);
+    // }
+  }
 }
 
 /*
+NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+
 Create a C# console application for a bakery that includes the
 following functionality:
 
@@ -49,6 +87,9 @@ Pastry, and question of how much of each
 
 Specs Plain English:
 Bread:
+Example input: BreadCost(0)
+Example output: 0
+
 Example input: BreadCost(1)
 Example output: 5
 

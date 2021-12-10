@@ -12,3 +12,5 @@
   <ItemGroup>
     <ProjectReference Include="..\Bakery\Bakery.csproj" />
   </ItemGroup>
+
+</Project>
