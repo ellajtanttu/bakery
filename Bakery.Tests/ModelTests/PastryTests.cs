@@ -48,21 +48,5 @@ namespace Bakery.Tests
       int actualResult = testPastry.PastryCost(pastryInput);
       Assert.AreEqual(expectedResult, actualResult);
     }
-
-    [TestMethod]
-    public void PastryConstructor_CreatesInstanceOfPastry_Item()
-    {
-      Pastry testPastry = new Pastry();
-      Assert.AreEqual(typeof(Pastry), testPastry.GetType());
-    }
   }
 }
-
-/*
-    [TestMethod]
-    public void ItemConstructor_CreatesInstanceOfItem_Item()
-    {
-      Item newItem = new Item();
-      Assert.AreEqual(typeof(Item), newItem.GetType());
-    }
-*/

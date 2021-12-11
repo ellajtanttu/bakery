@@ -1,5 +1,4 @@
 using System;
-// using System.Collections.Generic; // if using list objects
 
 namespace Bakery.Models
 {
