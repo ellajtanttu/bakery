@@ -20,7 +20,7 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Order), testOrder.GetType());
     }
 
-   [TestMethod]
+    [TestMethod]
     public void GetBreadNum_ReturnBNum_Int()
     {
       int breadOrder = 0;
@@ -52,15 +52,21 @@ namespace Bakery.Tests
     [TestMethod]
     public void GetAll_ReturnsEmptyList_OrderList()
     {
-      // Order testOrder = new Order(0,0);
       List<Order> testList = new List<Order> {};
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(testList, result);
     }
+
+    [TestMethod]
+    public void GetAll_ReturnsOrders_OrderList()
+    {
+      int breadOrderOne = 0;
+      int breadOrderTwo = 1;
+      Order testOrder1 = new Order(breadOrderOne,0);
+      Order testOrder2 = new Order(breadOrderTwo,0);
+      List<Order> newOrderList = new List<Order> {testOrder1, testOrder2};
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newOrderList, result);
+    }
   }
 }
-
-/*
-1. create an object
-2. instantiate object with properties
-*/
