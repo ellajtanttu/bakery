@@ -2,8 +2,7 @@
 
 #### EPICODUS Friday Project | Bakery Menu Application
 ---
-#### By
-* _**Ella Tanttu**_
+#### By:  _**Ella Tanttu**_
 
 ## Technologies Used
 
@@ -12,7 +11,12 @@
 
 ## Description
 
-_TBD - Detailed description that explains the project and what concepts were being practiced._
+_Application which greets a customer on startup, displays product prices, then runs through the following options:_\
+_1. Place Order_\
+_2. See Orders List_\
+_3. Clear Orders_\
+_4. Check Out_\
+_user is able to place multiple orders and then pay for the grand total at the end._
 
 ## Setup & Installation Instructions
 
