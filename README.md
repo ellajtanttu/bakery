@@ -23,10 +23,10 @@ _user is able to place multiple orders and then pay for the grand total at the e
 1. Download or clone github repository to local machine in desired directory - https://github.com/ellajtanttu/bakery
 2. If downloaded, extract .zip contents to desired directory
 3. Navigate to and open directory with Visual Studio Code
-4. Open terminal and install required packages by typing `$ dotnet restore`
-5. Test code in terminal by typing `$ dotnet test`
-6. Compile the file by entering `$ dotnet build`
-7. Run the program by typing `$dotnet run`
+4. Open terminal and install required packages by navigating to Bakery.Solution/Bakery/ and typing `$ dotnet restore`.
+5. Test code in terminal by navigating to Bakery.Solution/Bakery.tests/ and  typing `$ dotnet test`
+6. Compile the file by navigating to Bakery.Solution/Bakery/ and typing  `$ dotnet build`
+7. Run the program by navigating to Bakery.Solution/Bakery/ and typing `$dotnet run`
 
 ## Known Bugs
 
